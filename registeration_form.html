@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registeration form</title>
+        <style>
+            body{                
+                background: lightskyblue;
+                margin: 30px;
+            }
+            .left-column{
+                display: inline;
+                color: white;
+                float:left;
+                width: 50%;
+            }
+            .right-column{
+                display: inline;
+                float:right;
+                width: 50%;                
+                background-color: white;
+            }
+            .paragraph{
+                padding-right: 90px;
+            }
+            .heading{
+                padding-right: 50px;
+                font-size: 50px;
+            }
+            .Input{
+                width: 500px;
+                padding-left: 10px;
+            }
+            .name{
+                width: 300px;
+                padding: 10px;
+                margin-top: 0px;
+                border-radius: 30px;
+            }
+            .email{
+                width: 300px;
+                padding: 10px;
+                margin-top: 0px;
+                border-radius: 30px;
+            }
+            .company{
+                width: 300px;
+                padding: 10px;
+                margin-top: 0px;
+                border-radius: 30px;
+            }
+            .Gender{
+                width: 500px;
+                padding-left: 10px;
+            }
+            select{
+                width: 300px;
+                padding: 10px;
+                margin-top: 0px;
+                border-radius: 30px;
+                margin-left: 10px;
+            }
+            .country{
+                padding-left: 10px;
+            }
+            .note{
+                padding-left: 10px;
+                margin-left: 10px;
+            }
+            button{
+                width: 200px;
+                padding: 10px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                border-radius: 30px;
+                background-color: lightblue;
+            }
+            button:hover{
+                background-color:white;
+            }
+        </style>
+        <script>
+            function hello() {
+                alert("Request Submit Successfully");
+            }
+        </script>
+    </head>
+    <body>        
+            <div class="left-column">
+                <h1 class="heading">We are here to help you make a smart decision</h1>
+                <br />
+                <h4 class="paragraph">Just fill the form and we'll help you get started,
+                 develop a custom implementation plan or evaluate our product's features.</h4>
+            </div>
+            <div class="right-column">
+                <div class="Input">
+                    <h4>First name *</h4>
+                    <input class="name" type="text">
+                    <h4>Email adress *</h4>
+                    <input class="email" type="text">
+                    <h4>Company name</h4>
+                    <input class="company" type="text">
+                </div>
+                <div class="Gender">
+                    <h4>Gender</h4>
+                    <input type="radio" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <h4 class="country">Country name</h4>
+                <select >
+                    <option>Pakistan</option>
+                    <option>India</option>
+                    <option>Dubai</option>
+                    <option>China</option>
+                    <option>Afghanistan</option>
+                </select>
+                <p class="note">Note: *Required field</p>
+                <button onclick="hello()">Request a demo</button>
+            </div>        
+    </body>
+</html>
